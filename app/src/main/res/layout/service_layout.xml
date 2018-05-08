@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="350dp">
+
+        <TextView
+            android:id="@+id/textCoordinates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coordinates"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </ScrollView>
+    
+    <Button
+        android:id="@+id/startService"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/scrollView"
+        android:layout_height="wrap_content"
+        android:text="Start Service"/>
+
+    <Button
+        android:id="@+id/stopService"
+        android:layout_below="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/startService"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="Stop Service"/>
+
+</RelativeLayout>
